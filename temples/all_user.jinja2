@@ -1,0 +1,12 @@
+piВсе записи:
+
+Всего записей - {{ users|count }}
+{% for user in users %}
+ФИО  - {{ user }}:
+Город - {{city}}:
+Адресс  - {{ adress }}:
+Телефоны:
+{% for number in user.phones %}    {{number}}
+{% endfor %}====================================
+{% endfor %}
+
